@@ -1,6 +1,6 @@
 # Web-app-with-Flask
 
-_My attempt to build a simple Flask web application from scartch_
+_My attempt to build a simple Flask web application **from scartch**_
 
 ### Tools
 
