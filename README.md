@@ -15,8 +15,8 @@ Assume you have everything available
 * Open terminal
 * Navigate to the application directory
 * Activate virtual environment
-\*<code>source venv/bin/activate</code>
+\<code>source venv/bin/activate</code>
 * Run
-\*<code>flask run</code>
+\<code>flask run</code>
 * Open web browser and access site of your IP address
 * Explore the app and enjoy!
