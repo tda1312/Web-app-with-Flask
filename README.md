@@ -4,10 +4,11 @@ _My attempt to build a simple Flask web application **from scartch**_
 
 ### Tools
 
-* OS: ubuntu
-* Flask
+* OS: Ubuntu
+* Framework: Flask
 * Python3
 * Jinja
+* SQLAlchemy
 * SQLite
 
 ### Run
