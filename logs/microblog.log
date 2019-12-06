@@ -1,0 +1,47 @@
+2019-12-06 11:50:47,887 INFO: Microblog startup [in /home/etern1c/code/Python/microblog/Web-app-with-Flask/app/__init__.py:45]
+2019-12-06 11:50:53,844 ERROR: Exception on /favicon.ico [GET] [in /home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/app.py", line 1925, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/app.py", line 1907, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/werkzeug/routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/app.py", line 1743, in handle_http_exception
+    return handler(e)
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/app/errors.py", line 6, in not_found_error
+    return render_template('404.html'), 404
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html "%}
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/etern1c/code/Python/microblog/Web-app-with-Flask/venv/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html 
