@@ -23,7 +23,7 @@ _My attempt to build a simple Flask web application **from scartch**_
 * Install flask
   + <code>pip install flask</code>
 * Install python-dotenv package. Although I've already registered environment variables for flask in the .flaskenv file, the aforementioned package is required to use this option
-  + <code>pip install python-dotenv
+  + <code>pip install python-dotenv</code>
 * Run
   + <code>flask run</code>
     + Just in case, if you still encounter flask environment variables error, try <code>export FLASK_APP=microblog.py</code>
